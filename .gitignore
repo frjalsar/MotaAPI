@@ -1,0 +1,16 @@
+
+MotaAPI/.vs/MotaAPI/v16/.suo
+*.dll
+/MotaskraningWeb/bin
+/MotaskraningWeb/.vs
+/MotaskraningWeb/obj
+MotaAPI/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+MotaAPI/obj/Debug/netcoreapp3.1/MotaAPI.AssemblyInfo.cs
+MotaAPI/obj/Debug/netcoreapp3.1/MotaAPI.AssemblyInfoInputs.cache
+MotaAPI/obj/Debug/netcoreapp3.1/MotaAPI.assets.cache
+MotaAPI/obj/Debug/netcoreapp3.1/MotaAPI.csprojAssemblyReference.cache
+MotaAPI/obj/MotaAPI.csproj.nuget.dgspec.json
+MotaAPI/obj/MotaAPI.csproj.nuget.g.props
+MotaAPI/obj/MotaAPI.csproj.nuget.g.targets
+MotaAPI/obj/project.nuget.cache
+MotaAPI/obj/project.assets.json
