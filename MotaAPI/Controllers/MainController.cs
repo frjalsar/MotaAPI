@@ -52,15 +52,16 @@ namespace MotaAPI.Controllers
             public string strengur { get; set; }
         }
 
-        [HttpPost]
+        [HttpPost("/post")]
         public async Task<ActionResult<Mot>> CreateMot(Mot mot)
         {
             try
             {
                 if (mot == null)
+                {
                     Console.Error.WriteLine("Number 3");
                     return BadRequest();
-
+                }
                 Console.Error.WriteLine("Number 4");
                 return Ok();
             }
