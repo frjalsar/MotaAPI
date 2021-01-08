@@ -40,8 +40,8 @@ namespace MotaAPI.Controllers
         [HttpGet("/{info}")]
         public IActionResult Get(string info)
         {
-            Console.Error.WriteLine("Number 1");
-            Console.WriteLine("Number 2");
+            Console.Error.WriteLine("Number 1" + info);
+            Console.WriteLine("Number 2" + info);
 
             return Ok("Virkaði: " + info);
 
