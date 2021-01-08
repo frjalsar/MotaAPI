@@ -62,7 +62,7 @@ namespace MotaAPI.Controllers
                     Console.Error.WriteLine("Number 3");
                     return BadRequest();
                 }
-                Console.Error.WriteLine("Number 4");
+                Console.Error.WriteLine("Number 4 " +mot.strengur);
                 return Ok();
             }
             catch (Exception)
