@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -45,5 +46,31 @@ namespace MotaAPI.Controllers
             return Ok("Virkaði: " + info);
 
         }
+
+        public class Mot
+        {
+            public string strengur { get; set; }
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Mot>> CreateMot(Mot mot)
+        {
+            try
+            {
+                if (mot == null)
+                    Console.Error.WriteLine("Number 3");
+                    return BadRequest();
+
+                Console.Error.WriteLine("Number 4");
+                return Ok();
+            }
+            catch (Exception)
+            {
+                Console.Error.WriteLine("Number 5");
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error creating new Competition");
+            }
+        }
+
     }
 }
