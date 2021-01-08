@@ -9,9 +9,9 @@ namespace MotaAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class MainController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
+        /*private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
@@ -34,6 +34,16 @@ namespace MotaAPI.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }*/
+
+        [HttpGet("/{info}")]
+        public IActionResult Get(string info)
+        {
+            Console.Error.WriteLine("Number 1");
+            Console.WriteLine("Number 2");
+
+            return Ok("Virkaði: " + info);
+
         }
     }
 }

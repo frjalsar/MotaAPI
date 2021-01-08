@@ -1,9 +1,9 @@
+*.dll
 
 MotaAPI/.vs/MotaAPI/v16/.suo
-*.dll
-/MotaskraningWeb/bin
-/MotaskraningWeb/.vs
-/MotaskraningWeb/obj
+/MotaAPI/bin
+/MotaAPI/.vs
+/MotaAPI/obj
 MotaAPI/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
 MotaAPI/obj/Debug/netcoreapp3.1/MotaAPI.AssemblyInfo.cs
 MotaAPI/obj/Debug/netcoreapp3.1/MotaAPI.AssemblyInfoInputs.cache
@@ -14,3 +14,4 @@ MotaAPI/obj/MotaAPI.csproj.nuget.g.props
 MotaAPI/obj/MotaAPI.csproj.nuget.g.targets
 MotaAPI/obj/project.nuget.cache
 MotaAPI/obj/project.assets.json
+MotaAPI/.vs/MotaAPI/config/applicationhost.config
