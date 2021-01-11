@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Dapper;
 
 namespace MotaAPI.Controllers
 {
@@ -53,7 +54,7 @@ namespace MotaAPI.Controllers
         }
 
         [HttpPost("/post")]
-        public async Task<ActionResult<Mot>> CreateMot(Mot mot)
+        public async Task<ActionResult<Mot>> PostCompetition(Mot mot)
         {
             try
             {
@@ -71,6 +72,18 @@ namespace MotaAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     "Error creating new Competition");
             }
+        }
+
+        public void CreateCompetition()
+        {
+            // var connection = _context.Database.GetDbConnection();
+
+            var rowsAffected = _context.Database
+    .ExecuteSqlRaw(
+        @"UPDATE Student
+          SET Age = {0} 
+          WHERE Name = {1}", 29, "Mike Miles");
+            return Ok(new { RowsAffected = rowsAffected });
         }
 
     }
