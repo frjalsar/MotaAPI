@@ -28,8 +28,7 @@ namespace MotaAPI
         {
             services.AddControllers();
 
-            // var connection = "mssql://a:Langst0kk.@82.221.94.225/Athletics";
-            var connection = "Server=82.221.94.225;Database=Athletics;User Id=a;Password=Langst0kk.;";
+            
             services.AddDbContext<AppContext>(options => options.UseSqlServer(connection, x => x.UseNetTopologySuite()));
         }
 
