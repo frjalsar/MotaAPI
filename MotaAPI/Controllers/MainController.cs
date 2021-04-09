@@ -218,7 +218,7 @@ namespace MotaAPI.Controllers
 
         public SqlConnection OpenConnection()
         {
-            var ConnStr = "Server=82.221.94.225;Database=Athletics;User Id=a;Password=Langst0kk.;";
+            
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConnStr;
             connection.Open();
